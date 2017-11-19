@@ -6,6 +6,5 @@ It was tested only with a ProCurve 2824.
 
 todo:
 [ ] add password setting method
-[ ] write example config
-[ ] .gitignore
-[ ] requirements.txt
+[x] write example config
+[x] requirements.txt
