@@ -1,0 +1,62 @@
+hostname "access-3" 
+max-vlans 16 
+interface 23 
+   no lacp
+exit
+interface 24 
+   no lacp
+exit
+trunk 23-24 Trk1 LACP 
+snmp-server community "public" restricted
+vlan 1 
+   name "DEFAULT_VLAN" 
+   untagged 22,Trk1 
+   no ip address 
+   no untagged 1-21 
+   exit 
+vlan 100 
+   name "mgmt" 
+   ip address 192.18.2.13 255.255.252.0 
+   tagged Trk1 
+   exit 
+vlan 200 
+   name "lan" 
+   untagged 1-20 
+   tagged Trk1 
+   exit 
+vlan 300 
+   name "internet-1" 
+   tagged Trk1 
+   exit 
+vlan 301 
+   name "internet-2" 
+   tagged Trk1 
+   exit 
+vlan 302 
+   name "internet-3" 
+   tagged Trk1 
+   exit 
+vlan 303 
+   name "internet-4" 
+   tagged Trk1 
+   exit 
+vlan 302 
+   name "internet-3" 
+   tagged Trk1 
+   exit 
+vlan 303 
+   name "internet-4" 
+   tagged Trk1 
+   exit 
+vlan 400 
+   name "wlan" 
+   untagged 21 
+   tagged Trk1 
+   exit 
+dhcp-snooping
+dhcp-snooping vlan 200 400 
+interface Trk1
+   dhcp-snooping trust
+   exit
+spanning-tree Trk1 priority 4
+
