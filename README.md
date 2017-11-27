@@ -10,3 +10,5 @@ todo:
 - [x] add password setting method
 - [x] write example config
 - [x] requirements.txt
+- [ ] Jinja2 Template Support
+- [ ] easier configuration for multiple switches
