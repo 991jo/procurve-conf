@@ -1,5 +1,5 @@
 # procurve-conf
-A little python script to configure HP ProCurve switches based on pyserial and pexpect.
+A little python3 script to configure HP ProCurve switches based on pyserial and pexpect.
 
 This script is intended to be used with a resetted switch via serial.
 It was tested only with a ProCurve 2824 and on Linux and on Linux.
