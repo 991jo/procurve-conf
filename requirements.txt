@@ -1,3 +1,5 @@
+Jinja2==2.10
+MarkupSafe==1.0
 pexpect==4.3.0
 ptyprocess==0.5.2
 pyserial==3.4
