@@ -10,6 +10,6 @@ todo:
 - [x] add password setting method
 - [x] write example config
 - [x] requirements.txt
-- [ ] Jinja2 Template Support
-- [ ] easier configuration for multiple switches
-- [ ] config file instead of changing values in the script directly
+- [x] Jinja2 Template Support
+- [x] easier configuration for multiple switches
+- [x] config file instead of changing values in the script directly
