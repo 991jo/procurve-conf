@@ -4,6 +4,7 @@
 # for further infos read the annotations in this file.
 
 
+# Default passwords for operator and manager logins
 default_operator_pw = "operatorpw"
 default_manager_pw = "managerpw"
 
@@ -12,7 +13,9 @@ default_manager_pw = "managerpw"
 config = {
         'access-1':{
             'address': '192.18.2.11',
-            'hostname': 'access-1'
+            'hostname': 'access-1',
+            'manager_pw': 'otherpw', # how to specify an other password on a switch
+            'operator_pw': 'yetanotherpw'
             },
         'access-2':{
             'address': '192.18.2.12',
