@@ -11,9 +11,7 @@ It was tested only with a ProCurve 2824 and on Linux and on Linux.
 4. reset switch (often something with pressing the "reset" and "clear" buttons,
 take a look into your manual)
 5. start script
-'''
-python3 procurve.conf <switch_name>
-'''
+    python3 procurve.conf <switch_name>
 6. be happy and repeat ;)
 
 todo:
