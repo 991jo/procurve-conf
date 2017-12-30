@@ -19,6 +19,8 @@ import config
     - every function leaves the cli in the operator-mode but not in configure mode
 """
 
+debug_mode = True
+
 def debug_msg(message):
     if debug_mode:
         print(message)
@@ -92,10 +94,9 @@ def apply_config(child, config):
     child.sendline("end")
     child.expect(".*#")
     child.sendline("configure terminal")
-    with open(config) as f:
-        for line in f:
-            child.sendline(line)
-            child.expect(".*#")
+    for line in config.splitlines():
+        child.sendline(line)
+        child.expect(".*#")
     child.sendline("end")
     child.expect(".*#")
 
