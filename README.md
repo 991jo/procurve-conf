@@ -12,12 +12,12 @@ It was tested only with a ProCurve 2824 and on Linux and on Linux.
 take a look into your manual)
 5. start script
 
-    python3 procurve.conf <switch_name>
+    python3 procurve-conf.py <switch_name>
 
 6. be happy and repeat ;)
 
 todo:
-- [x] clean up the code 
+- [x] clean up the code
 - [x] add some documentation
 - [x] add password setting method
 - [x] write example config
